@@ -1,6 +1,6 @@
-# electron-spectron-quick-start
+# Electron-spectron-quick-start
 
-**Clone and run for a quick way to see Electron in action.**
+**Clone and run for a quick way to see Tests in Electron app.**
 
 ## To Use
 
@@ -8,13 +8,15 @@ To clone and run this repository you'll need:
 
 [Git](https://git-scm.com)
 
-[Node.js](https://nodejs.org/en/download/)(which comes with [npm](http://npmjs.com)) installed on your computer.
+[Node.js](https://nodejs.org/en/download/) (which comes with [npm](http://npmjs.com)) installed on your computer.
 
 [Mocha](https://mochajs.org/)
 
-Chai - ```bash npm install chai```
+[Chai.js Assertion Library](https://chaijs.com/)
 
-Electron - ```bash npm install --save-dev spectron```
+[Electron](https://github.com/electron/electron)
+
+[Spectron](https://github.com/electron/spectron)
 
 From your command line:
 
@@ -23,8 +25,8 @@ From your command line:
 git clone https://github.com/brunonf15/electron-spectron-quick-start
 # Go into the repository
 cd electron-quick-start
-# Install dependencies (like mocha, spectron and electron);
-# Run the teste
+# Install dependencies (mocha,chaijs, spectron and electron);
+# Run the test
 mocha test/test.js
 ```
 
