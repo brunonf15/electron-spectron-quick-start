@@ -14,7 +14,7 @@ global.before(function () {
 });
 
 describe('App starts and has correct title and buttons', function () {
-
+    "use strict";
     this.timeout(15000);
     let app;
 

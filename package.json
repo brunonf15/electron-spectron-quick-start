@@ -18,6 +18,7 @@
   "license": "CC0-1.0",
   "devDependencies": {
     "chai": "^3.5.0",
-    "electron": "~1.6.2"
+    "electron": "~1.6.2",
+    "spectron": "^3.6.4"
   }
 }
