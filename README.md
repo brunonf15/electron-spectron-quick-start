@@ -4,12 +4,17 @@
 
 ## To Use
 
-To clone and run this repository you'll need
+To clone and run this repository you'll need:
+
 [Git](https://git-scm.com)
+
 [Node.js](https://nodejs.org/en/download/)(which comes with [npm](http://npmjs.com)) installed on your computer.
+
 [Mocha](https://mochajs.org/)
-Chai - npm install chai
-Electron - npm install --save-dev spectron
+
+Chai - ```bash npm install chai```
+
+Electron - ```bash npm install --save-dev spectron```
 
 From your command line:
 
