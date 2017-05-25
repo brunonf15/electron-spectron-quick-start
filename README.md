@@ -24,7 +24,7 @@ From your command line:
 # Clone this repository
 git clone https://github.com/brunonf15/electron-spectron-quick-start
 # Go into the repository
-cd electron-quick-start
+cd electron-spectron-quick-start
 # Install dependencies (mocha,chaijs, spectron and electron);
 # Run the test
 mocha test/test.js
