@@ -4,9 +4,11 @@ const chaiAsPromised = require('chai-as-promised');
 const expect = require('chai').expect;
 const assert = require('chai').assert;
 const path = require('path');
-
-const electronPath = path.join(__dirname, '..', 'node_modules', '.bin', 'electron');
 const appPath = path.join(__dirname, '..');
+//Linux path
+// const electronPath = path.join(__dirname, '..', 'node_modules', '.bin', 'electron');
+//Windows path
+const electronPath = path.join(__dirname, '..', 'node_modules', 'electron' ,'dist', 'electron.exe');
 
 global.before(function () {
     chai.should();
