@@ -6,9 +6,9 @@ const assert = require('chai').assert;
 const path = require('path');
 const appPath = path.join(__dirname, '..');
 //Linux path
-// const electronPath = path.join(__dirname, '..', 'node_modules', '.bin', 'electron');
+const electronPath = path.join(__dirname, '..', 'node_modules', '.bin', 'electron');
 //Windows path
-const electronPath = path.join(__dirname, '..', 'node_modules', 'electron' ,'dist', 'electron.exe');
+// const electronPath = path.join(__dirname, '..', 'node_modules', 'electron' ,'dist', 'electron.exe');
 
 global.before(function () {
     chai.should();
@@ -34,7 +34,7 @@ describe('App starts and has correct title and buttons', function () {
         return app.stop();
     });
 
-    it('opens a window', function () {
+    /*it('opens a window', function () {
         return app.client.waitUntilWindowLoaded().getWindowCount()
             .should.eventually.equal(1);
     });
@@ -42,6 +42,22 @@ describe('App starts and has correct title and buttons', function () {
     it('tests the title', function () {
         return app.client.waitUntilWindowLoaded().getTitle()
             .should.eventually.equal('Hello World!');
+    });*/
+
+
+    it('should get text of an element or elements', function () {
+
+        then(function (texe) {
+            // Verify the window's title
+            // assert.equal(title, 'My App')
+            app.client.getText('#elem').then(function (errorText) {
+                console.log('The #elem text content is ' + errorText)
+            })
+
+        // outputs the following:
+        // "Lorem ipsum do
+        // lor sit amet,consetetur sadipscing elitr"
+        // outputs "" (empty string) since element is not interactable
     });
 
     /*it('tests the Open File button text exists', function() {
@@ -54,6 +70,7 @@ describe('App starts and has correct title and buttons', function () {
             .should.eventually.equal('Save Markdown');
     });*/
 
+});
 });
 
 
